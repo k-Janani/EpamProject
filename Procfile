@@ -1,0 +1,1 @@
+web: gunicorn shikshakikiran.wsgi --log-file -

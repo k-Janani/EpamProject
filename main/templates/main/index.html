@@ -1,0 +1,156 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% load i18n %}
+{% block head %}
+  <style type="text/css">.just {
+    text-align: justify;
+    text-justify: inter-word;
+  }
+  </style>
+{% endblock head %}
+{% block body %}
+	<!-- Carousel/Slider -->
+  <div class="slider" style="margin-top: 65px;">
+      <div id="carouselCaptions" class="carousel slide" data-keyboard='true' data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselCaptions" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselCaptions" data-slide-to="1"></li>
+          <li data-target="#carouselCaptions" data-slide-to="2"></li>
+          <li data-target="#carouselCaptions" data-slide-to="3"></li>
+          <li data-target="#carouselCaptions" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src='https://media.istockphoto.com/photos/tractor-spraying-soybean-field-picture-id506164764?b=1&k=20&m=506164764&s=170667a&w=0&h=Jape5dTdB-8HNjQFjc6aJODc_XQTqTwxGN4j0-j-Icg=' class="d-block w-100" alt="Digital Education">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>{% trans "Agriculture" %}</h4>
+              <small>{% trans "Offering farmers easier techniques of crop enhancement." %}</small>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src='https://analyticsinsight.b-cdn.net/wp-content/uploads/2020/10/Agriculture.jpg' class="d-block w-100" alt="Agriculture">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>{% trans "Educating farmers" %}</h4>
+              <small>{% trans "Awareness about digital world among farmers." %}</small>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src='https://www.feednavigator.com/var/wrbm_gb_food_pharma/storage/images/publications/feed/feednavigator.com/article/2020/01/24/dutch-government-bolsters-sustainable-agriculture-fund/10632216-1-eng-GB/Dutch-government-bolsters-sustainable-agriculture-fund.jpg' class="d-block w-100" alt="Weather">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>{% trans "Green Growth" %}</h4>
+              <small>{% trans "Ensuring sustainable agriculture fund." %} </small>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEiT2t1C4jDSdLJpVpr-fLyNqKdwO0TMwlYQ&usqp=CAU' class="d-block w-100" alt="Government Schemes">
+            <div class="carousel-caption d-none d-md-block">
+              <h4>{% trans "Government Schemes" %}</h4>
+              <small>{% trans "Making Govrenment schemes easily accessible." %}</small>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src={% static 'main/images/cards/card-money.png' %} class="d-block w-100" alt="Tourism">
+            <div class="carousel-caption d-none d-md-block text-dark">
+              <h4>{% trans "How to Transfer Money Online" %}</h4>
+              <small>{% trans "Go cashless." %}</small>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </div>
+
+<!--- Modi sayings -->
+  <br>
+  <div class="container text-center">
+    <h5>{% trans "THE DISCOVERY OF AGRICULTURE WAS THE FIRST BIG STEP TOWARDS CIVILIZED LIFE <br>-ARTHUR KEITH " %}</h5>
+    
+  </div>
+  <hr>
+
+  <!-- Cards -->
+  <br>
+  <h3 id="services" class="text-center">{% trans "Our Services" %}</h3>
+  <br>
+  <div class="container">
+    <div class="card-deck">
+      <div class="card text-center zoom-2 zoom-target">
+        <div class="card-img-wrap">
+          <img src={% static 'main/images/cards/card-education.jpeg' %} class="card-img-top" alt="...">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{% trans "Education" %}</h5>
+          <p class="card-text">{% trans "Welcome to the digital world." %}</p>
+          <a href="{% url 'subject-list' %}" class="btn btn-outline-primary">{% trans "Click Here" %}</a>
+        </div>
+      </div>
+      <div class="card text-center">
+        <div class="card-img-wrap">
+          <img src={% static 'main/images/cards/card-agriculture.jpeg' %} class="
+          card-img-top" alt="Agriculture">
+        </div>  
+        <div class="card-body">
+          <h5 class="card-title">{% trans "Agriculture" %}</h5>
+          <p class="card-text">{% trans "Preparing for Future." %}</p>
+          <a href="{% url 'agriculture' %}" class="btn btn-outline-primary">{% trans "Click Here" %}</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="card-deck">
+      
+     
+    </div>
+    <br>
+    <div class="card-deck">
+      <div class="card text-center">
+        <div class="card-img-wrap">
+          <img src={% static 'main/images/cards/card-money.png' %} height="300px;" class="card-img-top" alt="Money Transfer">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{% trans "How to Transfer Money Online" %}</h5>
+          <p class="card-text">{% trans "Money transfer on your tips." %}</p>
+          <a href="{% url 'money-transfer' %}" class="btn btn-outline-primary">{% trans "Click Here" %}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <section class="py-5 text-white hero bg-grey">
+    <div class="container">
+      <h3 id="Missions" class="text-center">{% trans "Our Missions" %}</h3>
+      <br>
+      <div class="row">
+        <div class="col-md-4">
+            <i class="fa fa-key fa-4x text-danger mb-3"></i>
+            
+            <p>{% trans "Our motto is to generate<br> &#10078;Panacea for all the troubles which are causing hindrances in the growth of India&#10078;." %}</p>            
+        </div>
+        <div class="col-md-4 text-center">
+          <i class="fa fa-user fa-4x text-warning mb-3"></i>
+          
+          <p>{% trans "As we all know, nearly 70&#37; of India's population lives in rural areas. So, by targeting this hefty portion of population we can increase the growth of India expeditiously." %}</p>
+        </div>
+        <div class="col-md-4">
+          <i class="fa fa-inr fa-4x text-success mb-3"></i>
+          
+          <p>
+            {% trans "SEED TO FEED will light up the path for evolving India into a developed country" %}
+            <br>
+            AGRICULTURE IS THE WORLD'S FUTURE
+          </p>
+          <p></p>
+        </div>
+      </div>  
+    </div>
+  </section>
+  <br>
+{% endblock body %}
