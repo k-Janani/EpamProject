@@ -41,11 +41,11 @@ This SeedToFeed website serves for the farmers and makes their living comfortabl
 
 5. S3
 
+**
+Devops Tools Working Steps:**
 
-Devops Tools Working Steps:
 
-
-GitHub
+**GitHub**
 
 
 ->The commands used to push the project files to github using git bash is
@@ -57,7 +57,7 @@ GitHub
 5. git remote -v
 6. git push -f github master
 
-Jenkins
+**Jenkins**
 
 
 Code
@@ -84,7 +84,7 @@ pipeline {
 ->Set the Jenkinsfile path to the location of your Jenkinsfile in the Git repository.
 ->Save the pipeline configuration and run the pipeline.
 
-EKS & Docker
+**EKS & Docker**
 
 ->Create an EKS cluster
 ->Build and push Docker images
