@@ -1,18 +1,15 @@
 # EpamProject
 
-===============
+
 
 **Introduction:**
 
-================
 
 This SeedToFeed website serves for the farmers and makes their living comfortable. This website seamlessly provide all the features which helps the farmers to gain more profit, solve their problem and increase productivity.
 
-=============
 
 **UseCases:**
 
-==============
 
 	Our agriculture app simplifies the farming experience with an all-in-one platform for login, accessing governmental schemes, and posting complaints.
 
@@ -30,11 +27,9 @@ This SeedToFeed website serves for the farmers and makes their living comfortabl
 
 	Our app is user-friendly and easy to navigate, making it simple for farmers of all ages to use.
 
-==================
 
 **Services Used:**
 
-==================
 
 1.GitHub
 
@@ -49,11 +44,9 @@ This SeedToFeed website serves for the farmers and makes their living comfortabl
 
 Devops Tools Working Steps:
 
-======
 
 GitHub
 
-======
 
 ->The commands used to push the project files to github using git bash is
 
@@ -64,11 +57,7 @@ GitHub
 5. git remote -v
 6. git push -f github master
 
-=======
-
 Jenkins
-
-=======
 
 
 Code
@@ -95,11 +84,7 @@ pipeline {
 ->Set the Jenkinsfile path to the location of your Jenkinsfile in the Git repository.
 ->Save the pipeline configuration and run the pipeline.
 
-============
-
 EKS & Docker
-
-=============
 
 ->Create an EKS cluster
 ->Build and push Docker images
